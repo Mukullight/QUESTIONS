@@ -1,0 +1,278 @@
+ :root {
+            --background: #ffffff;
+            --text: #000000;
+            --sidebar-bg: #ffffff;
+            --sidebar-text: #000000;
+            --accent: #000000;
+            --sidebar-width: 250px;
+            --sidebar-collapsed-width: 60px;
+        }
+
+        [data-theme="dark"] {
+            --background: #000000;
+            --text: #ffffff;
+            --sidebar-bg: #000000;
+            --sidebar-text: #ffffff;
+            --accent: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:'Segoe UI';
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+            transition: all 0.3s ease;
+            display: flex;
+        }
+
+        .hamburger {
+            display: none; 
+            cursor: pointer;
+            padding: 1rem;
+            z-index: 1001;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 5px;
+            background: var(--sidebar-text);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: 100vh;
+            background-color: var(--sidebar-bg);
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 2rem 0;
+            padding-top:3em;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .nav-brand {
+            color: var(--sidebar-text);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0 2rem 2rem;
+            border-bottom: 1px solid var(--sidebar-text);
+        }
+
+        .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.nav-link {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    opacity: 0.7;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+    background-color: var(--accent);
+    color: var(--contrast-text, #ffffff);  /* Default to white if var not set */
+}
+
+.nav-link.active {
+    border-left: 4px solid var(--sidebar-text);
+}
+
+/* Theme-specific contrast text colors */
+[data-theme="dark"] .nav-link:where(:hover, .active) {
+    --contrast-text: #000000;
+}
+
+[data-theme="light"] .nav-link:where(:hover, .active) {
+    --contrast-text: #ffffff;
+}
+      .theme-switch-wrapper {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001; /* Ensure it's above other elements */
+    padding: 0rem;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+}
+        .theme-switch {
+            display: inline-block;
+            height: 24px;
+            position:relative;
+            width: 48px;
+            border: 1px solid var(--sidebar-text);
+            border-color: white;
+            border-radius: 34px;
+            margin: 0 0.5rem;
+        }
+
+        .theme-switch input {
+            display: none;
+        }
+
+        .slider {
+            background-color: var(--background);
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            background-color: var(--text);
+            bottom: 4px;
+            content: "";
+            height: 16px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 16px;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--background);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        .main-content {
+            margin-left: var(--sidebar-width);
+            width: calc(100% - var(--sidebar-width)+10%);
+            padding-top: 0em;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-left: calc(var(--sidebar-width) + 2rem);
+        }
+
+        .section {
+            padding-left: 2em;
+            padding-top: 0;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            scroll-margin-top: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--text);
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            padding-left: 0.5em;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            padding-top: 0em;
+            padding: 0em;
+        }
+
+        .metadata {
+            color: var(--text);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            padding: 0em;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--text);
+            font-size: 0.9rem;
+            color: var(--text);
+            text-align: center;
+        }
+.main-content > .section {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#Introduction{
+padding: 0em;
+padding-left: 2.5em;
+}
+#Keydifferences{
+padding: 0em;
+padding-left: 2.5em;
+}
+#thesolution{
+padding: 0em;
+padding-left: 2.5em;
+}
+#Action{
+padding: 0em;
+padding-left: 2.5em;
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .sidebar {
+        /* Remove transform to show sidebar by default */
+        /* transform: translateX(-100%); */
+        position: fixed; /* Ensure sidebar stays in place */
+        left: -250px; /* Position sidebar off-screen initially */
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0; /* Slide sidebar into view when active */
+        width: var(--sidebar-width);
+    }
+
+    .main-content {
+        margin-left: 0; /* Start with no left margin */
+        padding-left: 2rem; /* Add padding for content readability */
+        padding-right: 0em;
+    }
+
+
+    }

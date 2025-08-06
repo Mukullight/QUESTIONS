@@ -1,0 +1,6 @@
+[
+    "How good is the larger model's ability to subvert the smaller model by jail breaking it?",
+    "Does it try to jail break the smaller model if so how and why?",
+    "What are the scaling laws for model-on-model attacks?",
+    "How do we detect sophisticated subversion attempts?"
+]

@@ -1,0 +1,7 @@
+[
+    "How do we make sure the models are robust to adversarial attacks?",
+    "How can poisoning the pre training corpora affect the model?",
+    "What are some of the ways we can hide malicious content that can jail break a model?",
+    "What novel attack vectors emerge as models become more capable?",
+    "How do we defend against attacks we haven't yet discovered?"
+]

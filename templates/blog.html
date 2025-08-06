@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/blog.rtl.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap">
+  <link rel="stylesheet" href="../css/gen/example.css">
+</head>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Factity</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-item nav-link link-body-emphasis active" href="#">Post training</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Fine tuning</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Alignment</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Reasoning</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Efficiency</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Datasets</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Applications</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container ">
+<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+  <div class="row g-0 align-items-center">
+    <div class=" col-lg-6 px-0">
+      <h1 class="display-4 fst-italic">Low Rank Adaptation of Language Models</h1>
+      <p class="lead my-3">Language models have a unique capability to adapt to domain-specific or task-specific data. However, the costs of full fine-tuning and deploying independent instances of these expensive models are infeasible. Hence, a unique form of adaptation using the injection of rank decomposition matrices is proposed.</p>
+      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+    </div>
+    <div class=" col-lg-6 px-0">
+      <img class="img-fluid rounded" src="../images/loraillustrated.png" alt="Low Rank Adaptation Illustration" width="auto" height="300" style="padding-left: 2.5rem;">
+    </div>
+  </div>
+</div>
+
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success-emphasis">Fine Tuning</strong>
+        <h3 class="mb-0">Instruction Fine-Tuning</h3>
+        <div class="mb-1 text-body-secondary">Jul 19, 2025</div>
+        <p class="mb-auto">Instruction fine-tuning is a technique used to adapt a pre-trained model to a specific task or dataset by providing additional training on a smaller, task-specific dataset using instruction and output pairs. This helps models understand the nuances of the task better.</p>
+        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          Continue reading
+        </a>
+      </div>
+      <div class="col-auto d-none d-lg-block"></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success-emphasis">Prompting</strong>
+        <h3 class="mb-0">Chain-of-Thought Prompting</h3>
+        <div class="mb-1 text-body-secondary">Jul 19, 2025</div>
+        <p class="mb-auto">Chain-of-thought prompting is a technique used to improve the performance of language models by encouraging them to reason through a problem step-by-step before arriving at an answer, using chain-of-thought demonstrations. This allows the model to better understand the problem and generate more accurate responses.</p>
+        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          Continue reading
+        </a>
+      </div>
+      <div class="col-auto d-none d-lg-block"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success-emphasis">Multi-Agent Systems</strong>
+        <h3 class="mb-0">Age of agents</h3>
+        <div class="mb-1 text-body-secondary">Jul 19, 2025</div>
+        <p class="mb-auto">From personal introspection to artificial intelligence: How AI agents mirror human thoughtfulness by breaking down complex tasks into collaborative, reflective processes that could redefine our relationship with technology. Creating a swarm of independent thinkers working in unison to bring ideas to life.</p>
+        <a href="https://factity.co.uk/agent.html" class="icon-link gap-1 icon-link-hover stretched-link">
+          Continue reading
+        </a>
+      </div>
+      <div class="col-auto d-none d-lg-block"></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success-emphasis">ai safety</strong>
+        <h3 class="mb-0">Open questions</h3>
+        <div class="mb-1 text-body-secondary">Jul 19, 2025</div>
+        <p class="mb-auto">Answer ends a conversation a question starts one. So what are the concrete open questions in AI safety inspired by the post <a href="https://alignment.anthropic.com/2025/recommended-directions/">recommended-directions</a>I tried to list out all the possible questions. I believe this will help people who are new to ai safety understand the landscape better and hopefully raise more questions than answers.</p>
+        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          Continue reading
+        </a>
+      </div>
+      <div class="col-auto d-none d-lg-block"></div>
+    </div>
+  </div>
+</div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        AI safety techniques 
+      </h3>
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Alignment of language models</h2>
+        <p class="blog-post-meta">Jul 19 2025 by <a href="#">Mukul Namagiri</a></p>
+        <p>Alignment is the process of ensuring that models behaviour, outputs and responses are consistent with the human values and goals</p>
+        <hr>
+        <p>We check for the models alignment with human values through various techniques such as reinforcement learning from human feedback (RLHF), adversarial testing, and interpretability methods etc. We hold a strong belief that with current rate progress in the autonomous gaming capabilities of llms there is strong case for investing in more robust systems and having better tractable, interpretabilible networks </p>
+        <h2></h2>
+        <p></p>
+        <blockquote class="blockquote">
+          "In a sensibly organized society, if you improve productivity, there is room for everybody to benefit. The problem isn't the technology, but the way the benefits are shared out." - Geoffrey Hinton
+        </blockquote>
+        <p>Having universal standards on what is safe and what is acceptable standards can be a challenging in a dynamic field such as ai safety. Having standardized evaluation methods is absolutely essential to ensure the safety and reliability of AI systems.</p>
+        <h3>AI safety criteria</h3>
+        <ul>
+          <li>Threat evaluation capabilities</li>
+          <li>Interpretability</li>
+          <li>Robustness</li>
+          <li>Scalability</li>
+          <li>Deception</li>
+        </ul>
+<article>
+  <h2>Adversarial Robustness</h2>
+  
+  <p>Adversarial robustness refers to a model's ability to maintain performance when facing malicious inputs or attacks. Key considerations include:</p>
+  
+  <h3>Attack Vectors</h3>
+  <ul>
+    <li><strong>Direct model attacks</strong>: Manipulation through adversarial prompts or inputs</li>
+    <li><strong>Indirect attacks</strong>: Exploiting system vulnerabilities or naive users</li>
+  </ul>
+
+  <h3>Defensive Measures</h3>
+  <ul>
+    <li>Input sanitization and validation</li>
+    <li>Adversarial training techniques</li>
+    <li>Model monitoring and anomaly detection</li>
+  </ul>
+
+  <h3>Evaluation Metrics</h3>
+  <p>Common assessment approaches include:</p>
+  <pre><code style="color: bisque; background: #a35757;"># Example evaluation pseudocode
+  def test_robustness(model, adversarial_examples):
+      success_rate = model.evaluate(adversarial_examples)
+      return 1 - success_rate</code></pre>
+
+  <p>Robust models should maintain performance even when facing carefully crafted adversarial inputs designed to exploit weaknesses.</p>
+</article>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Adversarial alignment</h2>
+        <p class="blog-post-meta">December 23, 2020 by <a href="#">Mukul Namagiri</a></p>
+
+        <p>In adversarial alignment we test the model's ability to defend itself against toxicity, hate speech, profanity etc. even if a malicious user tries to trick the system. Since large parts of the pre-training data has biased and human generated data extracted from different forms of text platforms from the internet it is safe to assume that there is a high likelihood of having harmful tokens in the responses of the language model. Aligned models are general purpose models 
+
+We usually look for how robust the model is to attacks and if the target model is breached then how bad the consequences are for the attack. These breaches can be of the type first person where the attacker gets hands on access and perpetrates an direct attack on the model via prompting etc and on the other hand the attacker games naive users by inserting harmful code into the system in an embedded format where the harmful prompt is hidden in plain text which is used by the naive user there by attacking the system. 
+</p>
+        <p>
+Improving model performance requires thorough monitoring and modification standards to understand and adjust the internal workings of neural networks. By analyzing model weights, we can detect deceptive or sycophantic behavior. Additionally, preparing models for unexpected distributional shifts and ensuring adversarial alignment enhances their robustness and reliability.</p>
+        
+<article>
+  <h2>AI Model Evaluation Metrics</h2>
+  
+<h3>Example table</h3>
+
+
+        <p>Model metrics</p>
+        <table class="table">
+          <thead>
+            <tr>
+        <th>Model</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                      <td>BERT-base</td>
+        <td>0.92</td>
+        <td>0.89</td>
+        <td>0.91</td>
+
+            </tr>
+            <tr>
+                      <td>GPT-3.5</td>
+        <td>0.88</td>
+        <td>0.91</td>
+        <td>0.86</td>
+
+            </tr>
+            <tr>
+                      <td>Llama 2</td>
+        <td>0.90</td>
+        <td>0.88</td>
+        <td>0.93</td>
+
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+        <td>Average</td>
+        <td>0.90</td>
+        <td>0.89</td>
+        <td>0.90</td>
+
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+<article class="blog-post">
+  <h2 class="display-5 link-body-emphasis mb-1">Prompt tuning using propagation</h2>
+  <p class="blog-post-meta">June, 2025 by <a href="#">Factity AI</a></p>
+
+  <p>In this work, we explore "prompt tuning," an innovative approach for adapting frozen language models to specific tasks without modifying their core parameters. Unlike traditional methods, this technique offers remarkable efficiency while maintaining strong performance.</p>
+  
+  <h3>Key Advantages of Prompt Tuning</h3>
+  <ul>
+    <li><strong>Soft Prompts:</strong> Unlike GPT-3's discrete text prompts, we learn continuous "soft prompts" through backpropagation that can incorporate signals from labeled examples</li>
+    <li><strong>Scalability:</strong> Our method becomes increasingly competitive with model tuning as models grow beyond billions of parameters, eventually matching its performance</li>
+    <li><strong>Efficiency:</strong> Enables reuse of a single frozen model for multiple downstream tasks, reducing the computational burden of large models</li>
+  </ul>
+
+  <h3>Notable Findings</h3>
+  <p>Our research reveals several important insights:</p>
+  <ul>
+    <li>Prompt tuning significantly outperforms GPT-3's few-shot learning approach</li>
+    <li>The method simplifies earlier "prefix tuning" approaches while maintaining effectiveness</li>
+    <li>Soft prompts demonstrate improved robustness in domain transfer scenarios</li>
+    <li>Enables efficient "prompt ensembling" for enhanced performance</li>
+  </ul>
+
+  <p>This approach represents a significant step forward in making large language models more practical and accessible, as it dramatically reduces the resources needed to adapt them to specific tasks while maintaining their powerful capabilities.</p>
+</article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">About</h4>
+          <p class="mb-0">Our mission is to make AI systems more Helpful, harmless and Humane. We help policy makers understand and navigate the complexities of AI technologies and evangelize about the importance of AI safety</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Recent posts</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                
+                <div class="col-lg-8">
+                  <h6 class="mb-0">importance of ai interpretability</h6>
+                  <small class="text-body-secondary">June, 2025</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                            <div class="col-lg-8">
+                  <h6 class="mb-0">Effects of Fine Tuning using prompts</h6>
+                  <small class="text-body-secondary">June, 2025</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+            
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Effects of training deep neural nets with sub linear memory costs</h6>
+                  <small class="text-body-secondary">June, 2025</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Sections</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">Interpretability</a></li>
+            <li><a href="#">Scalable sight</a></li>
+            <li><a href="#">Deception by language models</a></li>
+            <li><a href="#">Robustness</a></li>
+            <li><a href="#">Better interpretability</a></li>
+            <li><a href="#">Concentration of power</a></li>
+            <li><a href="#">AI race</a></li>
+            <li><a href="#">AI cyber warefare</a></li>
+            <li><a href="#">persuasive ai</a></li>
+            <li><a href="#">Agentic systems</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/Factity">GitHub</a></li>
+            <li><a href="https://x.com/MukulNamagiri">X</a></li>
+            <li><a href="https://www.instagram.com/fact.ity/">Facebook</a></li>
+            <li><a href="https://discord.gg/Aef5Xtynbr">Discord</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  <p>Blog template built for Factity by - Mukul Namagiri.</p>
+  <p class="mb-0">
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/blog.js"></script>
+<script src="../js/color-modes.js"></script>
+<script src="../js/placeholder.js"></script>

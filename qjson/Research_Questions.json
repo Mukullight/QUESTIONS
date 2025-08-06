@@ -1,0 +1,8 @@
+[
+    "Can we detect when our models are behaving weirdly?",
+    "When a model's computation is unusual or out of distribution?",
+    "What statistical methods work best for detecting anomalous AI behavior?",
+    "How do we distinguish between benign novelty and dangerous anomalies?",
+    "What baseline distributions should we use for anomaly detection?",
+    "How do we reduce false positive rates in anomaly detection systems?"
+]

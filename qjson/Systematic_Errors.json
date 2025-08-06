@@ -1,0 +1,7 @@
+[
+    "What do we do when our oversight signal systematically misrepresents the desired task?",
+    "When oversight signal makes systematic errors does the model exploit? List out some of the possible ways and examples of these?",
+    "How do we stop the model from gaming the system to give out more rewards when the output is not similar to actual reward signal?",
+    "How do we detect when models are exploiting oversight failures?",
+    "What safeguards prevent reward hacking behaviors?"
+]

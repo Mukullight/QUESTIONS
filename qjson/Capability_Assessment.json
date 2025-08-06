@@ -1,0 +1,8 @@
+[
+    "What level of catastrophic harms can these models cause?",
+    "What is their general ability in terms of where they stand?",
+    "How do they perform in restricted vs non restricted settings?",
+    "How do they behave in run time settings?",
+    "How do we benchmark catastrophic risk potential?",
+    "What metrics best capture dangerous capabilities?"
+]

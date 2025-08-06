@@ -1,0 +1,7 @@
+[
+    "Does the response it generated is thought through?",
+    "Did it introspect?",
+    "Can it predict the later moves?",
+    "How accurate are models at predicting their own future behavior?",
+    "What is the extent of their metacognitive abilities?"
+]

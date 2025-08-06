@@ -1,0 +1,9 @@
+[
+    "What are inter query defenses?",
+    "How do we distinguish from complex subproblem solution strategies?",
+    "What are the effective ways to patch the model after adversarial attacks?",
+    "What are methods of unlearning the malicious information?",
+    "How do we validate that patches don't introduce new vulnerabilities?",
+    "What is the effectiveness of different unlearning approaches?",
+    "How do we maintain model performance while removing harmful capabilities?"
+]

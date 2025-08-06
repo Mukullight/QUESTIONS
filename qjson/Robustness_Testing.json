@@ -1,0 +1,10 @@
+[
+    "Are there better ways on how these models should be evaluated? We want to be robust even in high stakes scenarios not just in regular use.",
+    "How do we truly measure how resilient they are towards misaligned behaviour?",
+    "How do we study their sycophantic tendencies?",
+    "If it does reach the right conclusion, how did it do it?",
+    "Under what conditions will it mislead us?",
+    "If the model is particularly averse even slight amount of risk then how do we know how it performs?",
+    "How do we test alignment under distributional shift?",
+    "What stress tests reveal alignment failures?"
+]

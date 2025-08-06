@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safety Evaluation Questions by Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .definition {
+            background-color: #f8f9fa;
+            border-left: 4px solid #17a2b8;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Safety Evaluation Questions by Category</h1>
+
+    <h2>1. Model Capability Assessment</h2>
+    
+    <h3>Evaluation Settings</h3>
+    <ul>
+        <li>Where should these systems be evaluated?</li>
+        <li>Chemical, biological, radiological, nuclear weapon development settings or in general purpose settings such as novel research, tool use autonomously completing open ended tasks?</li>
+        <li>What are the implications of dual-use capabilities in AI systems?</li>
+        <li>How do we balance open research with security concerns in capability evaluation?</li>
+    </ul>
+
+    <h3>Third Party Evaluation</h3>
+    <ul>
+        <li>Why is it important to have third party model evaluations?</li>
+        <li>What standards should third-party evaluators follow?</li>
+        <li>How do we ensure independence and expertise in third-party evaluations?</li>
+        <li>What are the costs and benefits of mandatory third-party audits?</li>
+    </ul>
+
+    <h2>2. Evaluating Alignment</h2>
+    
+    <h3>Current Limitations</h3>
+    <ul>
+        <li>If they are aligned how aligned they are?</li>
+        <li>How do we evaluate alignment beyond monitoring how a model responds in general conversations, refuses harmful queries and avoids producing harmful texts?</li>
+        <li>What are the different dimensions of alignment we should measure?</li>
+        <li>How do we distinguish between surface-level compliance and deep alignment?</li>
+    </ul>
+
+    <h3>Robustness Testing</h3>
+    <ul>
+        <li>Are there better ways on how these models should be evaluated? We want to be robust even in high stakes scenarios not just in regular use.</li>
+        <li>How do we truly measure how resilient they are towards misaligned behaviour?</li>
+        <li>How do we study their sycophantic tendencies?</li>
+        <li>If it does reach the right conclusion, how did it do it?</li>
+        <li>Under what conditions will it mislead us?</li>
+        <li>If the model is particularly averse even slight amount of risk then how do we know how it performs?</li>
+        <li>How do we test alignment under distributional shift?</li>
+        <li>What stress tests reveal alignment failures?</li>
+    </ul>
+
+    <h2>3. Understanding the Cognition of These Systems</h2>
+    
+    <h3>Beyond Input-Output Analysis</h3>
+    <ul>
+        <li>Do we really know how these systems work?</li>
+        <li>Are they right?</li>
+        <li>What makes them toxic?</li>
+        <li>What are the fundamental limitations of black-box evaluation?</li>
+    </ul>
+
+    <h3>Internal Processing</h3>
+    <ul>
+        <li>Do they plan?</li>
+        <li>How much do they know about their situation?</li>
+        <li>Are they hiding something?</li>
+        <li>How do we decode how the internal algorithms function?</li>
+        <li>What neural connections produced the results?</li>
+        <li>How faithful are externalized reasoning steps?</li>
+        <li>What is the relationship between internal representations and external behavior?</li>
+        <li>How do we validate interpretability methods?</li>
+    </ul>
+
+    <h3>Introspection and Prediction</h3>
+    <ul>
+        <li>Does the response it generated is thought through?</li>
+        <li>Did it introspect?</li>
+        <li>Can it predict the later moves?</li>
+        <li>How accurate are models at predicting their own future behavior?</li>
+        <li>What is the extent of their metacognitive abilities?</li>
+    </ul>
+
+    <h3>Personality and Generalization</h3>
+    <ul>
+        <li>How do effects of personality on behaviour work?</li>
+        <li>How do they generalize to out of distribution responses?</li>
+        <li>How do they behave in novel situations?</li>
+        <li>To what extent does being fake aligned influence its persona?</li>
+        <li>How do they behave across a wide range of safety critical tasks?</li>
+        <li>How does persona effect behaviour?</li>
+        <li>Does having similar capabilities with different personas lead to different sorts of responses?</li>
+        <li>How stable are personality traits across different contexts?</li>
+        <li>What factors influence persona development during training?</li>
+    </ul>
+
+    <h2>4. Chain of Thought Faithfulness</h2>
+    
+    <h3>Basic Reliability</h3>
+    <ul>
+        <li>What can we take from the face value of chain of thought?</li>
+        <li>Do they always say what they think?</li>
+        <li>Do they have ulterior motives?</li>
+        <li>How faithful has their reasoning process been?</li>
+        <li>How do we calibrate confidence in chain of thought explanations?</li>
+    </ul>
+
+    <h3>Task Variation</h3>
+    <ul>
+        <li>How does chain of thought vary based on the type of task?</li>
+        <li>Does better performance mean the chain of thought is more accurate?</li>
+        <li>Does the chain of thought vary between reasoning and creative? If so how?</li>
+        <li>How does task complexity affect reasoning transparency?</li>
+        <li>What patterns emerge in reasoning across different domains?</li>
+    </ul>
+
+    <h3>Monitoring Effects</h3>
+    <ul>
+        <li>If the models know about its situations does it think differently?</li>
+        <li>Will it change its thinking process when it knows its been monitored or evaluated?</li>
+        <li>How much of the thinking process will it mask when it knows its been monitored?</li>
+        <li>How do we account for observer effects in reasoning evaluation?</li>
+        <li>What methods can detect performance changes under observation?</li>
+    </ul>
+
+    <h3>Detection Methods</h3>
+    <ul>
+        <li>How can we know these unfaithful chain of thought steps?</li>
+        <li>Are there any automatic methods to find the unfaithful chain of thought?</li>
+        <li>How can we make them more efficient and better recall?</li>
+        <li>What benchmarks exist for measuring reasoning faithfulness?</li>
+        <li>How do we validate automated faithfulness detection systems?</li>
+    </ul>
+
+    <h2>5. AI Control</h2>
+    
+    <h3>Control Mechanisms</h3>
+    <ul>
+        <li>How can we control these systems?</li>
+        <li>What sorts of safeguards should be put in place?</li>
+        <li>What are the trade-offs between control and capability?</li>
+        <li>How do we maintain control as systems become more capable?</li>
+    </ul>
+
+    <h3>Capability Assessment</h3>
+    <ul>
+        <li>What level of catastrophic harms can these models cause?</li>
+        <li>What is their general ability in terms of where they stand?</li>
+        <li>How do they perform in restricted vs non restricted settings?</li>
+        <li>How do they behave in run time settings?</li>
+        <li>How do we benchmark catastrophic risk potential?</li>
+        <li>What metrics best capture dangerous capabilities?</li>
+    </ul>
+
+    <h3>Safeguard Effectiveness</h3>
+    <ul>
+        <li>Even if they are capable of causing catastrophic harms what sort of safeguards would prevent them from causing these?</li>
+        <li>How do we test safeguard robustness under extreme conditions?</li>
+        <li>What are the failure modes of current control mechanisms?</li>
+        <li>How do we design fail-safe systems for AI control?</li>
+    </ul>
+
+    <h2>6. Behavioural Monitoring</h2>
+    
+    <div class="definition">
+        <strong>Definition:</strong> Here either a trusted capable or untrusted model of similar capabilities are used to test for the model's safety.
+    </div>
+
+    <h3>Subversion and Jailbreaking</h3>
+    <ul>
+        <li>How good is the larger model's ability to subvert the smaller model by jail breaking it?</li>
+        <li>Does it try to jail break the smaller model if so how and why?</li>
+        <li>What are the scaling laws for model-on-model attacks?</li>
+        <li>How do we detect sophisticated subversion attempts?</li>
+    </ul>
+
+    <h3>Collusion</h3>
+    <ul>
+        <li>Does it collude with the other models?</li>
+        <li>How can we reduce these collusion instances?</li>
+        <li>How can we make them more resilient where does data fit into this?</li>
+        <li>What communication channels enable model collusion?</li>
+        <li>How do we design systems resistant to coordination attacks?</li>
+    </ul>
+
+    <h3>Failure Analysis</h3>
+    <ul>
+        <li>What are the failure rates for these approaches and how often do they occur?</li>
+        <li>What is the impact these might have?</li>
+        <li>Does context help and if so how much is required?</li>
+        <li>How do we characterize the severity of monitoring failures?</li>
+        <li>What are the statistical properties of false positives and negatives?</li>
+    </ul>
+
+    <h2>7. Activation Monitoring</h2>
+    
+    <div class="definition">
+        <strong>Definition:</strong> Here we attempt to monitor the latent activations by attempting to train simple probes using model latent activations to classify when it is writing secure vs insecure code.
+    </div>
+
+    <h3>Research Questions</h3>
+    <ul>
+        <li>How is the model's reasoning related to its latent activations?</li>
+        <li>Is activation monitoring robust to distributional shift?</li>
+        <li>Can we detect dangerous model generations of interest?</li>
+        <li>What layers and activation patterns are most informative for safety monitoring?</li>
+        <li>How do we handle adversarial attacks against activation monitoring?</li>
+        <li>What is the computational overhead of real-time activation monitoring?</li>
+    </ul>
+
+    <h2>8. Anomaly Detection</h2>
+    
+    <ul>
+        <li>Can we detect when our models are behaving weirdly?</li>
+        <li>When a model's computation is unusual or out of distribution?</li>
+        <li>What statistical methods work best for detecting anomalous AI behavior?</li>
+        <li>How do we distinguish between benign novelty and dangerous anomalies?</li>
+        <li>What baseline distributions should we use for anomaly detection?</li>
+        <li>How do we reduce false positive rates in anomaly detection systems?</li>
+    </ul>
+
+    <h2>9. Scalable Oversight and Recursive Oversight</h2>
+    
+    <h3>Oversight Challenges</h3>
+    <ul>
+        <li>How do we oversee the systems that are increasingly difficult to understand?</li>
+        <li>How do we make sure that the oversight does not interfere with the experiments?</li>
+        <li>How do we avoid systematic errors stemming from the human overseers?</li>
+        <li>What are the fundamental limits of human oversight?</li>
+        <li>How do we maintain oversight quality as systems scale?</li>
+    </ul>
+
+    <h3>Automation</h3>
+    <ul>
+        <li>How do we make these oversight mechanisms automated so as to avoid expensive evaluation procedures or specialized human labour?</li>
+        <li>What tasks can be safely automated in oversight systems?</li>
+        <li>How do we validate automated oversight systems?</li>
+        <li>What human-AI collaboration models work best for oversight?</li>
+    </ul>
+
+    <h3>Systematic Errors</h3>
+    <ul>
+        <li>What do we do when our oversight signal systematically misrepresents the desired task?</li>
+        <li>When oversight signal makes systematic errors does the model exploit? List out some of the possible ways and examples of these?</li>
+        <li>How do we stop the model from gaming the system to give out more rewards when the output is not similar to actual reward signal?</li>
+        <li>How do we detect when models are exploiting oversight failures?</li>
+        <li>What safeguards prevent reward hacking behaviors?</li>
+    </ul>
+
+    <h3>Bootstrapping and Decomposition</h3>
+    <ul>
+        <li>Can we achieve good oversight by bootstrapping from the bad oversight?</li>
+        <li>Can the task be decomposed into further smaller tasks?</li>
+        <li>How are adversarial techniques useful in recursive oversight?</li>
+        <li>What task decomposition strategies maintain oversight quality?</li>
+        <li>How do we aggregate oversight from multiple decomposed tasks?</li>
+    </ul>
+
+    <h3>Generalization</h3>
+    <ul>
+        <li>Can we get good performance from bad oversight and generalizations?</li>
+        <li>What are weak to strong generalizations and easy to hard generalizations?</li>
+        <li>How do we measure the quality of weak-to-strong generalization?</li>
+        <li>What factors determine generalization success in oversight scenarios?</li>
+        <li>How do we prevent capability overhang in oversight systems?</li>
+    </ul>
+
+    <h2>10. Honesty</h2>
+    
+    <h3>Detection and Improvement</h3>
+    <ul>
+        <li>Do we know when our models are being honest even if we can't judge the accuracy of the response?</li>
+        <li>How do we make these models more honest?</li>
+        <li>Why is honesty important for building safer ai systems?</li>
+        <li>What training methods promote honest behavior?</li>
+        <li>How do we measure honesty independent of accuracy?</li>
+        <li>What are the trade-offs between honesty and other desirable traits?</li>
+    </ul>
+
+    <h3>Exploitation</h3>
+    <ul>
+        <li>What are the possible ways a model might be able to exploit an overseer error?</li>
+        <li>How do dishonest models manipulate human evaluators?</li>
+        <li>What patterns indicate deceptive behavior in AI systems?</li>
+        <li>How do we design oversight systems resistant to deception?</li>
+    </ul>
+
+    <h2>11. Adversarial Robustness</h2>
+    
+    <h3>Attack Vectors</h3>
+    <ul>
+        <li>How do we make sure the models are robust to adversarial attacks?</li>
+        <li>How can poisoning the pre training corpora affect the model?</li>
+        <li>What are some of the ways we can hide malicious content that can jail break a model?</li>
+        <li>What novel attack vectors emerge as models become more capable?</li>
+        <li>How do we defend against attacks we haven't yet discovered?</li>
+    </ul>
+
+    <h3>Defense Development</h3>
+    <ul>
+        <li>How can we build practical scalable defenses against misuse of ai systems?</li>
+        <li>What are realistic and practical benchmarks for jailbreaks?</li>
+        <li>How do we measure the real world impact or harms that these ai systems have caused?</li>
+        <li>What defense strategies have the best cost-benefit ratios?</li>
+        <li>How do we balance robustness with system usability?</li>
+    </ul>
+
+    <h3>Understanding Attacks</h3>
+    <ul>
+        <li>Why does jailbreaking as a process work?</li>
+        <li>How can we induce the model to respond to questions in a harmful manner?</li>
+        <li>What are the fundamental vulnerabilities that enable attacks?</li>
+        <li>How do attack methods evolve over time?</li>
+        <li>What psychological principles do successful attacks exploit?</li>
+    </ul>
+
+    <h3>Human Manipulation</h3>
+    <ul>
+        <li>Can these models manipulate humans if so how can we quantify their level of influence?</li>
+        <li>How do we effectively train them to recognize they are being used in a harmful setting?</li>
+        <li>What are the warning signs of manipulative AI behavior?</li>
+        <li>How do we measure and mitigate persuasion capabilities?</li>
+        <li>What safeguards protect vulnerable user populations?</li>
+    </ul>
+
+    <h3>Attack Diversity</h3>
+    <ul>
+        <li>How do we recognize the diversity in the forms of attacks and what are the ways for effective measurement?</li>
+        <li>What are instances of simple human attacks?</li>
+        <li>Are there any measurable collections of data repos for this?</li>
+        <li>Where are we documenting them?</li>
+        <li>How do we create comprehensive attack taxonomies?</li>
+        <li>What standardized formats exist for sharing attack information?</li>
+    </ul>
+
+    <h2>12. Adaptive Defenses</h2>
+    
+    <h3>Defense Development</h3>
+    <ul>
+        <li>Can we develop safeguards to attackers? If so how can we do that?</li>
+        <li>What are the differences between adaptive adversaries and static adversaries?</li>
+        <li>How do we design defenses that improve over time?</li>
+        <li>What machine learning approaches work best for adaptive defense?</li>
+        <li>How do we balance adaptation speed with stability?</li>
+    </ul>
+
+    <h3>Defense Mechanisms</h3>
+    <ul>
+        <li>What are inter query defenses?</li>
+        <li>How do we distinguish from complex subproblem solution strategies?</li>
+        <li>What are the effective ways to patch the model after adversarial attacks?</li>
+        <li>What are methods of unlearning the malicious information?</li>
+        <li>How do we validate that patches don't introduce new vulnerabilities?</li>
+        <li>What is the effectiveness of different unlearning approaches?</li>
+        <li>How do we maintain model performance while removing harmful capabilities?</li>
+    </ul>
+
+    <h2>13. Multi-Agent Systems</h2>
+    
+    <h3>Risk Prevention</h3>
+    <ul>
+        <li>How do we avoid risks from multi agent systems?</li>
+        <li>How do we avoid a race condition in these multi agent systems?</li>
+        <li>Why is role of responsibility important in multi agent systems?</li>
+        <li>What emergent behaviors pose the greatest risks in multi-agent systems?</li>
+        <li>How do we design coordination mechanisms that prevent harmful outcomes?</li>
+        <li>What governance structures work best for multi-agent AI systems?</li>
+        <li>How do we ensure accountability in distributed AI systems?</li>
+        <li>What methods prevent harmful competition between AI agents?</li>
+        <li>How do we align individual agent goals with collective safety?</li>
+    </ul>
+
+</body>
+</html>
+
